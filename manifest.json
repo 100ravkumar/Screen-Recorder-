@@ -1,0 +1,23 @@
+
+{
+  "manifest_version": 3,
+  "name": "Screen Recorder",
+  "short_name": "Recorder of Screen",
+  "description": "Recorder The Screen And Desktop With screen audio",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs","activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "js": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
