@@ -9,3 +9,6 @@ After Extract Follow these Steps For Load in Your Local System :--
 5chrome will load the unpacked extension, and it will appear in the list of installed extensions on the Extensions page.
 
 Start Recording and Stop Recording their are two Buttons Use them in Extension
+
+
+extensions does not work on google chrome home page . you have to open another page then its work properly.
